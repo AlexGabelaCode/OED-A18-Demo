@@ -1,0 +1,56 @@
+
+.btn-center {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;   
+    padding: 3rem;
+}
+
+.btn{
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 9px;
+    box-sizing: border-box;
+    margin: 0 1rem;
+    width: 80%;
+    text-align: center;
+    border: 0px solid transparent;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.btn-form{
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 0px solid transparent;
+    font-size: 13px;
+    border-radius: 8px;
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: auto;
+    }
+}
+
+.btn-sec{
+    background-color: #B6C4DB;
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}

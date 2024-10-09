@@ -1,0 +1,28 @@
+<div class="header">
+    <img class="logo-icon" src="icons/logo-icon.svg" alt="OneElevenDevelopment">
+    <div class="headerNavigation">
+        <div class="menu-desktop">
+            @for (opcionMenu of menu_1; track $index) {
+                <div class="opcionMenu">
+                    <p class="poppins-medium">
+                        <a [routerLink]="opcionMenu.ruta">{{opcionMenu.opcion.toUpperCase()}}</a>
+                    </p>
+                </div>
+            }
+        </div>
+        <div class="menu-resp-m">
+            <button class="button-menu" mat-icon-button [matMenuTriggerFor]="menu">
+                <img src="icons/menu.svg" alt="menu">
+            </button>
+            <mat-menu #menu="matMenu">
+                @for (opcionMenu of menu_1; track $index) {
+                    <button class="optionMenuMobile" mat-menu-item>
+                        <p class="poppins-medium">
+                            <a [routerLink]="opcionMenu.ruta">{{opcionMenu.opcion.toUpperCase()}}</a>
+                        </p>
+                    </button>
+                }
+            </mat-menu>
+        </div>
+    </div>
+</div>

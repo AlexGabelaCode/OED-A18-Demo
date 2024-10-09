@@ -1,0 +1,65 @@
+<div class="home">
+    <div class="home-banner">
+        <div class="banner-desc">
+            <p>One Eleven Development</p>
+            <p>Create unique experiences with iOS and web development</p>
+        </div>
+        <a class="btn-sec" routerLink="/about">Find out more about us</a>
+    </div>
+    <div class="body-container">
+        <div class="info-carousel-container resp-desktop">
+            <div class="info">
+                <p>What makes it ours</p>
+                <p>Company mainly focused on software development mainly on native iOS and web design and development.</p>
+            </div>
+            <div class="carousel">
+                <app-carousel [images]="carousel_1" [autoSlide]="false" [imageCarousel]="true"></app-carousel>
+            </div>
+        </div>
+        <div class="info-carousel-container resp-mobile">
+            <div class="carousel">
+                <app-carousel [images]="carousel_1" [autoSlide]="false" [imageCarousel]="true"></app-carousel>
+            </div>
+            <div class="info">
+                <p>What makes it ours</p>
+                <p>Company mainly focused on software development mainly on native iOS and web design and development.</p>
+            </div>
+        </div>
+        <div class="info-carousel-container resp-desktop">
+            <div class="carousel">
+                <app-carousel [images]="carousel_2" [autoSlide]="false" [imageCarousel]="true"></app-carousel>
+            </div>
+            <div class="info-right">
+                <p>We create custom apps for your needs</p>
+                <p>We develop custom systems following strict quality standards. Our applications are scalable, robust, and easy to use.</p>
+            </div>
+        </div>
+        <div class="info-carousel-container resp-mobile">
+            <div class="carousel">
+                <app-carousel [images]="carousel_2" [autoSlide]="false" [imageCarousel]="true"></app-carousel>
+            </div>
+            <div class="info">
+                <p>We create custom apps for your needs</p>
+                <p>We develop custom systems following strict quality standards. Our applications are scalable, robust, and easy to use.</p>
+            </div>
+        </div>
+        <div class="info-carousel-container resp-desktop u-mb-0">
+            <div class="info">
+                <p>Web Design & Development</p>
+                <p>With our help, make your business visible 24/7 with a professional website.</p>
+            </div>
+            <div class="carousel">
+                <app-carousel [images]="carousel_3" [autoSlide]="false" [imageCarousel]="true"></app-carousel>
+            </div>
+        </div>
+        <div class="info-carousel-container resp-mobile u-mb-0">
+            <div class="carousel">
+                <app-carousel [images]="carousel_3" [autoSlide]="false" [imageCarousel]="true"></app-carousel>
+            </div>
+            <div class="info">
+                <p>Web Design & Development</p>
+                <p>With our help, make your business visible 24/7 with a professional website.</p>
+            </div>
+        </div>
+    </div>
+</div>

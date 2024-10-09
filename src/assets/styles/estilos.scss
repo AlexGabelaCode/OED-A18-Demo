@@ -1,0 +1,151 @@
+@import "fonts.scss";
+@import "colores.scss";
+@import "botones.scss";
+
+/*
+@import "temaAngularMaterial.scss";
+*/
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-texto;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+}
+
+h1{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 55px;
+  line-height: 55px;
+  margin: 0;
+}
+
+h2{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+}
+
+h3{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+a{
+  color: $color-texto;
+  cursor: pointer;
+}
+
+button{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.sep-line-w{
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  background-color: $color-blanco;
+  border-radius: 4px;
+}
+
+.u-mb-0{
+  margin-bottom: 0;
+}
+
+.w-100{
+  width: 100%;
+}
+
+//Accordion
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none !important;
+}
+
+.mat-expansion-panel {
+  background-color: transparent !important;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 24px 0 0 !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  font-style: normal;
+}
+
+.mat-expansion-panel-content{
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal;
+}
+
+.mat-expansion-indicator svg {
+  fill: #243A69 !important;
+}
+
+@media (hover: none) {
+  .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
+      background: none !important;
+  }
+}
+
+@media(max-width: 400px){
+  .mat-expansion-panel-body{
+    font-size: 12px;
+  }
+  .mat-expansion-panel-header-title, .mat-expansion-panel-header-description{
+    font-size: 14px;
+  }
+}
+
+//Menu-Responsive
+
+.cdk-overlay-container{
+  position: absolute !important;
+}
+
+.cdk-overlay-container .cdk-overlay-connected-position-bounding-box{
+  top: 52px !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+
+.cdk-overlay-pane{
+  top: 0 !important;
+}
+
+.mat-mdc-menu-panel{
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.mat-mdc-menu-content {
+  width: 350px;
+  background: linear-gradient(180deg, rgba(93,152,187,1) 0%, rgba(182,196,219,1) 100%);
+}
+
+.mat-mdc-menu-item{
+  padding: 0 15% !important;
+}

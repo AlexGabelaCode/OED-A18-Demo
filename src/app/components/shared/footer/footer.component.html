@@ -1,0 +1,82 @@
+<div class="footer-container">
+    <div class="sep-line-w"></div>
+    <div class="footer-content footer-desktop">
+        <div class="contact">
+            <img class="logo-icon" src="icons/logo-icon.svg" alt="OneElevenDevelopment">
+            <div class="social-media">
+                @for (media of social_media; track $index; let i = $index) {
+                    <a [href]="media.href"><img [src]="media.src" [alt]="media.alt"></a>
+                }
+            </div>
+            <div class="contact-info">
+                <p>Contact:</p>
+                <p>
+                    Carlos de Leon<br>
+                    javaswift&#64;icloud.com<br>
+                    (602)-587-5203<br>
+                    Gilbert, Arizona<br>
+                </p>
+            </div>
+        </div>
+        <div class="links">
+            <div class="privacy">
+                <div><a>Notice of Privacy</a></div>
+                <div><a>Terms and Conditions</a></div>
+            </div>
+            <div class="rutes">
+                <div>
+                    <a routerLink="/about">About</a>
+                </div>
+                <div>
+                    <a routerLink="/services">Services</a>
+                </div>
+                <div>
+                    <a routerLink="/contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="resources">
+                <div><p>Resources:</p></div>
+                <div><a>Comunity</a></div>
+                <div><a>Technical Service</a></div>
+                <div><a>Knowledge Base</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content footer-mobile">
+        <img class="logo-icon" src="icons/logo-icon.svg" alt="OneElevenDevelopment">
+        <div class="contact-links">
+            <div class="contact-info">
+                <p>Contact:</p>
+                <p>
+                    Carlos de Leon<br>
+                    javaswift&#64;icloud.com<br>
+                    (602)-587-5203<br>
+                    Gilbert, Arizona<br>
+                </p>
+            </div>
+            <div class="routes">
+                <div>
+                    <a routerLink="/about">About</a>
+                </div>
+                <div>
+                    <a routerLink="/services">Services</a>
+                </div>
+                <div>
+                    <a routerLink="/contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            @for (media of social_media; track $index; let i = $index) {
+                <a [href]="media.href"><img [src]="media.src" [alt]="media.alt"></a>
+            }
+        </div>
+        <div class="privacy">
+            <div><a>Notice of Privacy</a></div>
+            <div><a>Terms and Conditions</a></div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © One Eleven Development All rights reserved</p>
+</div>

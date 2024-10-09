@@ -1,0 +1,123 @@
+@import "../../../../assets/styles/colores.scss";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-blanco;
+    height: auto;
+    width: 100%;
+    
+    img.logo-icon{
+        width: 150px;
+        height: 100%;
+        max-width: 150px;
+        height: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    @media(max-width: 720px){
+        img.logo-icon{
+            width: 130px;
+        }
+        
+    }
+}
+
+.headerNavigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button-menu{
+        img{
+            width: 50px;
+            height: 100%;
+        }
+    }
+
+    .menu-resp-m{
+        max-height: 50px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+}
+
+.opcionMenu{
+    margin: 10px 20px;
+
+    p{
+        width: max-content;
+        
+        a{
+            padding: 10px 20px;
+            font-size: 18px;
+            line-height: 18px;
+            border-radius: 15px;
+        }
+
+        @media(max-width: 800px){
+            a{
+                font-size: 16px;
+            }
+            
+        }
+        @media(max-width: 750px){
+            a{
+                font-size: 14px;
+            }
+        }
+
+        :hover{
+            background-color: $hover-menu;
+            color: $color-blanco;
+        }
+    }
+}
+
+.optionMenuMobile{
+
+    p{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-blanco;
+        border-radius: 15px;
+        
+        a{
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 15px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        :hover{
+            background-color: $hover-menu;
+            color: $color-blanco;
+        }
+    }
+}
+
+//Responsive Mobile
+
+@media(min-width: 720px){
+    .menu-desktop{
+        display: flex;
+    }
+    .menu-resp-m{
+        display: none;
+    }
+}
+
+@media(max-width: 720px){
+    .menu-desktop{
+        display: none;
+    }
+    .menu-resp-m{
+        display: block;
+    }
+}

@@ -1,0 +1,39 @@
+@if ((images && images.length > 0) && imageCarousel==true) {
+    <div class="carousel-container">
+        @for (image of images; track image.id; let i = $index) {
+            <img class="fade" [ngClass]="{'image-active': selectedIndex === i}" [src]="image.imageSrc" [alt]="image.imageAlt">
+        }
+        @if (indicators) {
+            <div class="carousel-dot-container">
+                @for (dot of images; track $index; let i = $index) {
+                    <span class="dot" [ngClass]="{'active': selectedIndex === i}" (click)="selectImage(i)"></span>
+                }
+            </div>
+        }
+        @if (controls) {
+            <button class="btn-carousel btn-prev" (click)="onPrevClick()">
+                <i class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+            </button>
+            <button class="btn-carousel btn-next" (click)="onNextClick()">
+                <i class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+            </button>
+        }
+    </div>
+}
+@if((info && info.length > 0) && textCarousel){
+    <div class="carousel-container textCar">
+        @for (inf of info; track inf.id; let i = $index) {
+            <div class="about-container fade" [ngClass]="{'info-active': selectedIndex === i}">
+                <h2>{{inf.title}}</h2>
+                <p>{{inf.desc}}</p>
+            </div>
+        }
+        @if (indicators) {
+            <div class="carousel-dot-container">
+                @for (dot of info; track $index; let i = $index) {
+                    <span class="dot" [ngClass]="{'active': selectedIndex === i}" (click)="selectImage(i)"></span>
+                }
+            </div>
+        }
+    </div>
+}
